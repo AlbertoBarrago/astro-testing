@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+
+<Layout title="About">
+    <main transition:animate="slide">
+        <img class="customImage" transition:name="imageEffect" src="https://picsum.photos/500/300">
+        <a class="customLink" href="/" transition:name="textEffect">Prodotto XYS - 10x</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae dicta facere ipsa laborum perferendis quod repellendus reprehenderit repudiandae veritatis?</p>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .customImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .customLink {
+        margin-left: 20px;
+        color: whitesmoke;
+        font-size: 2em;
+        text-decoration: none;
+    }
+</style>
